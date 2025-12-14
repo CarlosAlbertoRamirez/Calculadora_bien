@@ -1,0 +1,125 @@
+/* Fondo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f0f4ff, #fdfdfd);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contenedor principal */
+.app {
+    max-width: 500px;
+    width: 90%;
+    background: #ffffff;
+    padding: 30px 30px 20px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+/* Título */
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+}
+
+label {
+    font-size: 14px;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+/* Botón */
+button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    background-color: #4a90e2;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.2s;
+}
+
+button:hover {
+    background-color: #3a78be;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* Mensajes de error */
+.errores {
+    min-height: 18px;
+    font-size: 13px;
+    color: #b00020;
+    margin-top: 4px;
+}
+
+/* Resultado */
+.resultado {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* Etiquetas de categoría */
+.tag {
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.tag-bajo {
+    background-color: #ffe0e0;
+    color: #c62828;
+}
+
+.tag-saludable {
+    background-color: #e0ffe5;
+    color: #2e7d32;
+}
+
+.tag-sobrepeso {
+    background-color: #fff4e0;
+    color: #ef6c00;
+}
+
+.tag-obesidad {
+    background-color: #ffe0f0;
+    color: #ad1457;
+}
+
+/* Footer */
+.footer {
+    margin-top: 25px;
+    font-size: 11px;
+    color: #777;
+}
